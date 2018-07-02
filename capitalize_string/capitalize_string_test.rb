@@ -17,4 +17,7 @@ class Test_Capitalize_strings < Minitest::Test
 	def test_assert_works_with_characters
 		assert_equal("Just checking again!", capitalize_string("JUST CHECKING AGAIN!"))
 	end
+	def test_assert_works_with_characters_with_same_letter
+		assert_equal("Just jump!", capitalize_string("JUST Jump!"))
+	end
 end

@@ -1,8 +1,7 @@
 def capitalize_string(str)
 	str = str.split("")
-	str.each { |x| 
-		case x
-		when str[0]
+	str.each_with_index { |x,index| 
+		if index == 0
 			x.upcase!
 		else 
 			x.downcase!

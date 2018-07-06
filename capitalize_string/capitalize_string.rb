@@ -6,7 +6,7 @@ def capitalize_string(str)
 		else 
 			x.downcase!
 		end
-		}
+	}
 	str = str.join
 	str
 end
